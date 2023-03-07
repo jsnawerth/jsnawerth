@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+html{
+    scroll-padding-top: 200px;
+}
 :root {
     --dark-blue: hsl(230, 31%, 15%);
 }
@@ -418,7 +421,6 @@ ul{
 }
 /*Products*/
 .products{
-    margin-top: 40px;
 }
 
 .product img{width: 100%;}
@@ -455,9 +457,8 @@ ul{
 }
 .card {
     height: 90%;
-    backdrop-filter: blur(16px) saturate(180%);
     background-color: white;
-    border: 1px solid lightgreen;  
+    border: 2px solid lightgreen;  
     padding: 20px;
     text-align: center;
     position: relative;
@@ -504,7 +505,7 @@ ul{
     transition: 0.4s ease-out;
 }
 .card:hover{
-    border: 3px solid rgba(20, 114, 168, 0.5);
+    border: 2px solid rgba(20, 114, 168, 0.5);
 }
 .product button{
     padding: 10px 20px;
