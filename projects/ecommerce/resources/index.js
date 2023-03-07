@@ -149,19 +149,3 @@ window.addEventListener('scroll',()=>{
     topBar.style.display = '';
   }
 });
-
-function setScrollPaddingTop() {
-  const links = document.querySelectorAll('a[href^="#"]');
-
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', () => {
-      const html = document.querySelector("html");
-      html.style.scrollPaddingTop = '140px';
-      setTimeout(() => {
-        html.style.scrollPaddingTop = '';
-      }, 200);
-    });
-  }
-}
-
-setScrollPaddingTop();
