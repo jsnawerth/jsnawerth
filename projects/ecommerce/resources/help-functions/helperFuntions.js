@@ -397,7 +397,7 @@ export const hoverbuttons = () =>{
 
     button.addEventListener('mouseover', () => {
       if (sibling && sibling.classList.contains('card')) {
-        sibling.style.border = '3px solid rgba(20, 114, 168, 0.5)';
+        sibling.style.border = '2px solid rgba(20, 114, 168, 0.5)';
       }
     });
 
