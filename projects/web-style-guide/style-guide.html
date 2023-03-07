@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Website Style Guide</title>
+    <link rel="stylesheet" href="./resources/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h2><a href="./index.html">Website Style Guide</a></h2>
+                <img src="./img/light.png" id="btn1">
+                <img src="./img/dark.png" id="btn2">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#gradients">Gradients</a></li>
+                    <li><a href="#fonts">Fonts</a></li>
+                    <li><a href="#headings">Text Style</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="colors">
+            <div class="container">
+                <div class="colorbtn">
+                    <h2>Colors</h2>
+                    <div>
+                    <button id="hex" class="btn-color active">HEX</button>
+                    <button id="rgb" class="btn-color">RGB</button>
+                    <button id="hsl" class="btn-color">HSL</button>
+                    </div>
+                </div>
+                <div class="color-container">
+                    <div class="color-item f-item">
+                        <div class="color1"></div>
+                        <div>
+                            <p>Whitesmoke</p>
+                            <p class="hex">#F5F5F5</p>
+                            <p class="rgb">rgb(245,245,245)</p>
+                            <p class="hsl">hsl(0,0,96)</p>
+                        </div>
+                    </div>
+                    <div class="color-item f-item">
+                        <div class="color2"></div>
+                        <div>
+                            <p>Gainsboro</p>
+                            <p class="hex">#DCDCDC</p>
+                            <p class="rgb">rgb(236,236,236)</p>
+                            <p class="hsl">hsl(0,0,86)</p>
+                        </div>
+                    </div>
+                    <div class="color-item f-item">
+                        <div class="color3"></div>
+                        <div>
+                            <p>Lightseagreen</p>
+                            <p class="hex">#20B2AA</p>
+                            <p class="rgb">rgb(32,178,170)</p>
+                            <p class="hsl">hsl(177,70,41)</p>
+                        </div>
+                    </div>
+                    <div class="color-item f-item">
+                        <div class="color4"></div>
+                        <div>
+                            <p>SteelBlue</p>
+                            <p class="hex">#4682B4</p>
+                            <p class="rgb">rgb(70,130,180)</p>
+                            <p class="hsl">hsl(207,44,49)</p>
+                        </div>
+                    </div>
+                    <div class="color-item f-item">
+                        <div class="color5"></div>
+                        <div>
+                            <p>Tomato</p>
+                            <p class="hex">#FF6347</p>
+                            <p class="rgb">rgb(255,99,71)</p>
+                            <p class="hsl">hsl(9,100,64)</p>
+                        </div>
+                    </div>
+                    <div class="color-item f-item">
+                        <div class="color6"></div>
+                        <div>
+                            <p>Yellow</p>
+                            <p class="hex">#E0E054</p>
+                            <p class="rgb">rgb(224, 224, 84)</p>
+                            <p class="hsl">hsl(60,69,60)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gradients">
+            <div class="container">
+                <h2>Gradients</h2>
+                <div class="color-container">
+                    <div class="f-item gradient">
+                        <div class="gradient1"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>Yellow</p>
+                                <p class="hex">#E0E054</p>
+                                <p class="rgb">rgb(224, 224, 84)</p>
+                                <p class="hsl">hsl(60,69,60)</p>
+                            </div>
+                            <div class="right">
+                                <p>Tomato</p>
+                                <p class="hex">#FF6347</p>
+                                <p class="rgb">rgb(255,99,71)</p>
+                                <p class="hsl">hsl(9,100,64)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-item gradient">
+                        <div class="gradient2"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>SteelBlue</p>
+                                <p class="hex">#4682B4</p>
+                                <p class="rgb">rgb(70,130,180)</p>
+                                <p class="hsl">hsl(207,44,49)</p>
+                            </div>
+                            <div class="right">
+                                <p>Lightseagreen</p>
+                                <p class="hex">#20B2AA</p>
+                                <p class="rgb">rgb(32,178,170)</p>
+                                <p class="hsl">hsl(177,70,41)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-item gradient">
+                        <div class="gradient3"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>Lightseagreen</p>
+                                <p class="hex">#20B2AA</p>
+                                <p class="rgb">rgb(32,178,170)</p>
+                                <p class="hsl">hsl(177,70,41)</p>
+                            </div>
+                            <div class="right">
+                                <p>Yellow</p>
+                                <p class="hex">#E0E054</p>
+                                <p class="rgb">rgb(224, 224, 84)</p>
+                                <p class="hsl">hsl(60,69,60)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-item gradient">
+                        <div class="gradient4"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>SteelBlue</p>
+                                <p class="hex">#4682B4</p>
+                                <p class="rgb">rgb(70,130,180)</p>
+                                <p class="hsl">hsl(207,44,49)</p>
+                            </div>
+                            <div class="right">
+                                <p>Whitesmoke</p>
+                                <p class="hex">#F5F5F5</p>
+                                <p class="rgb">rgb(245,245,245)</p>
+                                <p class="hsl">hsl(0,0,96)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-item gradient">
+                        <div class="gradient5"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>Lightseagreen</p>
+                                <p class="hex">#20B2AA</p>
+                                <p class="rgb">rgb(32,178,170)</p>
+                                <p class="hsl">hsl(177,70,41)</p>
+                            </div>
+                            <div class="right">
+                                <p>Gainsboro</p>
+                                <p class="hex">#DCDCDC</p>
+                                <p class="rgb">rgb(236,236,236)</p>
+                                <p class="hsl">hsl(0,0,86)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f-item gradient">
+                        <div class="gradient6"></div>
+                        <div class='flex-container'>
+                            <div class="left">
+                                <p>Tomato</p>
+                                <p class="hex">#FF6347</p>
+                                <p class="rgb">rgb(255,99,71)</p>
+                                <p class="hsl">hsl(9,100,64)</p>
+                            </div>
+                            <div class="right">
+                                <p>Whitesmoke</p>
+                                <p class="hex">#F5F5F5</p>
+                                <p class="rgb">rgb(245,245,245)</p>
+                                <p class="hsl">hsl(0,0,96)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="fonts">
+            <div class="container">
+                <h2>Font Families</h2>
+                <div class="color-container">
+                    <div class="f-item heading">
+                        <p><span>Poppins - 700</span> Headings</p>
+                        <p class="first-letter">Aa</p>
+                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        <p>1 2 3 4 5 6 7 8 9 0</p>
+                    </div>
+                    <div class="f-item subheading">
+                        <p><span>Poppins - 600</span> Subheadings</p>
+                        <p class="first-letter"">Aa</p>
+                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        <p>1 2 3 4 5 6 7 8 9 0</p>
+                    </div>
+                    <div class="f-item bodytext">
+                        <p><span>Poppins - 400</span> Body Text</p>
+                        <p class="first-letter">Aa</p>
+                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        <p>1 2 3 4 5 6 7 8 9 0</p>
+                    </div>
+                    <div class="f-item quotes">
+                        <p><span>Poppins - 400 italic</span> Quotes</p>
+                        <p class="first-letter">Aa</p>
+                        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        <p>1 2 3 4 5 6 7 8 9 0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="headings">
+            <div class="container">
+                <h2>Text Styles</h2>
+                <div class="flex-container top">
+                    <p>Base Line</p>
+                    <div class="dotted"></div>
+                    <p class="right">16px</p>
+                </div>
+                <div class="flex-container top">
+                    <p>Scale</p>
+                    <div class="dotted"></div>
+                    <p class="right">1.333 - Perfect Fourth</p>
+                </div>
+                <div class="grid-container3">
+                    <div class="flex-container col topborder">
+                        <h1>Heading 1</h1>
+                        <div class="right m-center">
+                            <p>font-family: 'Poppins', sans-serif;</p>
+                            <p>font-size: 3.052rem;</p>
+                            <p>font-weight: 700;</p>
+                            <p>line-height: 1.3;<p>
+                            <p>letter-spacing: 0;</p>
+                        </div>
+                    </div>
+                        <div class="flex-container col topborder">
+                            <h2>Heading 2</h2>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 3.157rem;</p>
+                                <p>font-weight: 700;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+                        <div class="flex-container col topborder">
+                            <h3>Heading 3</h3>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 2.369rem;</p>
+                                <p>font-weight: 700;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+                        <div class="flex-container col topborder">
+                            <h4>Heading 4</h4>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 1.777rem;</p>
+                                <p>font-weight: 700;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+                        <div class="flex-container col topborder">
+                            <h5>Heading 5</h5>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 1.333rem;</p>
+                                <p>font-weight: 700;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+                        <div class="flex-container col topborder">
+                            <h6>Heading 6</h6>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 0.75rem;</p>
+                                <p>font-weight: 700;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+                        <div class="flex-container col topborder">
+                            <p>Paragraph</p>
+                            <div class="right m-center">
+                                <p>font-family: 'Poppins', sans-serif;</p>
+                                <p>font-size: 1rem/16px;</p>
+                                <p>font-weight: 400;</p>
+                                <p>line-height: 1.3;<p>
+                                <p>letter-spacing: 0;</p>
+                            </div>
+                        </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <p>Copyright &copy; Jerry S. Nawerth V. </p>
+        </div>
+    </footer>
+    <a href="#header" class="go-up"><img src="./img/Asset 6.png" alt=""></a>
+    <script src="./resources/index.js"></script>    
+  </body>
+</html>

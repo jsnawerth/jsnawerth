@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Fahkwang', sans-serif;
+    scroll-padding-top: 4rem;
+}
+.container{
+    margin: 0 10%;
+}
+/* Header */
+header{
+    color: rgb(49, 49, 49);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F5EBE0;
+}
+.header{
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    padding: 16px 0;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header .menu{
+    width: 40px;
+}
+.nav-mobile, .menu{
+    display: none;
+}
+@media only screen and (max-width:860px){
+    header .desktop{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-mobile{
+        position: fixed;
+        top:0;
+        z-index: 5;
+        background-color:#F5EBE0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .nav-mobile a{
+        text-decoration: none;
+        color: inherit;
+        margin-right: 20px;
+        line-height: 2.5;
+    }
+    .nav-mobile ul{list-style: none;
+    }
+}
+/* Main */
+/* Mission */
+main{
+    margin-top: 4.5rem;
+}
+#mission{
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(254, 252, 243, 0.8);
+    padding: 2%;
+    width: 100%;
+}
+@media only screen and (max-width:600px){
+    section h1{
+        font-size: 2.5rem;
+    }
+}
+/* Products */
+.title h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    border-bottom: 2px solid #F0DBDB;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+.products figure{
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+.products img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #FEFCF3;
+    padding: 10px;
+}
+/* Team */
+.team figure{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+.team img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        margin: 0 2%;
+    }
+    .team img{
+        height: 400px;
+    }
+}
+/* Contact */
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 1px #F0DBDB solid;
+    padding:30px 0;
+    flex-grow: 1;
+}.left-item{
+    width: 90%;
+    text-align: center;
+}
+.left-item textarea,.left-item .name, .left-item .email, .left-item select, .left-item .subject {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #F0DBDB solid;
+}
+.btn-primary{
+    padding: 10px;
+    background-color: #F5EBE0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-primary:hover{
+    background-color: #dfd4c8;
+}
+.right-item{
+    flex-grow: 1;
+    background-color: #F5EBE0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 974px){
+    .right-item{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+/*Footer*/
+footer{
+    background-color: #DBA39A;
+    padding: 30px 0;
+}

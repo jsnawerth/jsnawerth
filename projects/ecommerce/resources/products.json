@@ -1,0 +1,95 @@
+{
+    "products": [
+      {
+        "product": {
+          "image": "./resources/img/beats-heatphones.jpg",
+          "category": "ACCESSORIES",
+          "name": "Headphones Beats",
+          "price": "123.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/gopro.jpg",
+          "category": "CAMERAS",
+          "name": "GoPro 7",
+          "price": "234.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/gopro9.jpg",
+          "category": "CAMERAS",
+          "name": "GoPro 9",
+          "price": "345.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/headphones.jpg",
+          "category": "ACCESSORIES",
+          "name": "Headphones dachmer",
+          "price": "456.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/iphone.jpg",
+          "category": "PHONES",
+          "name": "iPhone X",
+          "price": "567.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/laptop1.jpg",
+          "category": "LAPTOPS",
+          "name": "MacBook 13\"",
+          "price": "678.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/laptop2.jpg",
+          "category": "LAPTOPS",
+          "name": "MacBook Pro 15\"",
+          "price": "678.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/olympus-camera.jpg",
+          "category": "CAMERAS",
+          "name": "Olympus Camera",
+          "price": "678.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/phone.jpg",
+          "category": "PHONES",
+          "name": "Hustle Phone",
+          "price": "678.99€",
+          "button": "Add to cart"
+        }
+      },
+      {
+        "product": {
+          "image": "./resources/img/vintage-camera.jpg",
+          "category": "CAMERAS",
+          "name": "Vintage Photocamera",
+          "price": "678.99€",
+          "button": "Add to cart"
+        }
+      }
+    ]
+}
+  

@@ -1,0 +1,182 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Commerce Product List</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./resources/index.css">
+        <script type="module" src="./resources/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="contact-info">
+                <div class="container d-flex top-nav align-center">
+                    <ul>
+                        <li class="phone"><a href="tel:+12-123-456-789"><i class="fa fa-phone"></i> +12 123-456 789</a></li>
+                        <li><a href="mailto:test-ecommerce@yoursite.com:"><span class="desktop"><i class="fa fa-envelope-o"></i> company@email.com</span></a></li>
+                    </ul>
+                    <ul>
+                        <!--<li><a href="#"><i class="fa fa-euro"></i><span> EUR</span></a></li>-->
+                        <li><a href="./404.html"><i class="fa fa-user"></i><span class="desktop"> My Account</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mid-nav">    
+                <div class="container d-flex space-between">
+                    <figure>
+                    <a href="./index.html"><img src="./resources/img/logo.png" alt="Company Logo"></a>
+                    <figcaption><a href="./index.html">CompanyName</a></figcaption>
+                    </figure>
+                    <div class="icons">
+                        <ul>
+                            <li><div id="wish-ammount" class="ammount"></div><span id="wishBtn"><i class="fa fa-heart wishDropdown"></i><span class="desktop wishDropdown">&nbsp;&nbsp; Wishlist</span>
+                                <div class="wishlist-container">
+                                    <div class="noProductsWish">
+                                        There're no products to display!
+                                    </div>
+                                    <div class="wishlist-wrapper">
+                                        <div class="wish-container">
+                                        </div>
+                                        <a href="./404.html">
+                                            <button>
+                                                See more
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="wishPopup" class="alert">
+                                    <span>NameOfProduct has been added to Wishlist</span>
+                                </div>
+                            </span></li>
+                            <li><div id="cart-ammount" class="ammount"></div><span id="cartBtn"><i class="fa fa-cart-arrow-down cartDropdown"></i><span class="desktop cartDropdown">&nbsp;&nbsp; Your Cart</span>
+                                <div class="cart-container">
+                                    <div class="noProducts">
+                                        There're no products to display!
+                                    </div>
+                                    <div class="list-wrapper">
+                                        <div class="list-container">
+                                        </div>
+                                        <div class="summary">
+                                            <span>0</span> item(s) selected
+                                            <p class="subtotal">SUBTOTAL: <span>0.00</span>€</p>
+                                        </div>
+                                        <a href="./checkout.html">
+                                            <button>
+                                                Checkout
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="cartPopup" class="alert">
+                                    <span>NameOfProduct has been added to your cart</span>
+                                </div>
+                            </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-nav">
+                <div class="container">
+                    <img id="mobile-btn" src="./resources/img/menu.png" alt="menu">
+                    <nav id="mobileMenu">
+                        <ul>
+                            <li class="mobile-active"><a class="menu active" href="index.html">Home</a></li>
+                            <!--<li><a class="menu" href="#">Categories</a></li>-->
+                            <li><a class="menu" href="./404.html">About Us</a></li>
+                            <li><a class="menu" href="./404.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            <section id="categories" class="categories">
+                <div class="container d-flex space-between gap-30 wrap">
+                    <div id="laptops" class="categorie">
+                        <div class="text">
+                            <a href="#container">
+                                <p>Laptop Collection</p>
+                                <p><span>SHOP NOW <i class="fa fa-arrow-circle-right"></i></span></p>
+                                <figure>
+                                    <img src="./resources/img/laptp[.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="accessories" class="categorie">
+                        <div class="text">
+                            <a href="#container">
+                                <p>Accessories</p>
+                                <p><span>SHOP NOW <i class="fa fa-arrow-circle-right"></i></span></p>
+                                <figure>
+                                    <img src="./resources/img/headphone.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="cameras" class="categorie">
+                        <div class="text">
+                            <a href="#container">
+                                <p>Cameras</p>
+                                <p><span>SHOP NOW <i class="fa fa-arrow-circle-right"></i></span></p>
+                                <figure>
+                                    <img src="./resources/img/camera.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="phones" class="categorie">
+                        <div class="text">
+                            <a href="#container">
+                                <p>Phones</p>
+                                <p><span>SHOP NOW <i class="fa fa-arrow-circle-right"></i></span></p>
+                                <figure>
+                                    <img src="./resources/img/phone.png" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="divider">
+                <div class="container d-flex btns">
+                        <button id="dispList">List</button>
+                        <button id="dispGrid">Grid</button>
+                </div>
+            </section>
+            
+            <section class="searchbar">
+                <div class="container d-flex searchNav" autocomplete="off">
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input">
+                            <input type="text" placeholder="Search" id="mySearch">
+                        </div>
+                        <span class="clear"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div id="container" class="container grid">
+                    
+                </div>
+            </section>
+            <section class="divider">
+                <div class="container d-flex btns">
+                        <a href="#container"><button id="showAll">Show All</button></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                &copy; CompanyName All Rights Reserved
+            </div>
+        </footer>
+    </body>
+    </html>

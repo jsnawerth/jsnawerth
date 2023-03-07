@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./resources/checkout.css">
+    <script type="module" src="./resources/checkout.js" async></script>
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <div class="container d-flex top-nav align-center">
+                <ul>
+                    <li class="phone"><a href="tel:+12-123-456-789"><i class="fa fa-phone"></i> +12 123-456 789</a></li>
+                    <li><a href="mailto:test-ecommerce@yoursite.com:"><span class="desktop"><i class="fa fa-envelope-o"></i> company@email.com</span></a></li>
+                </ul>
+                <ul>
+                    <!--<li><a href="#"><i class="fa fa-euro"></i><span> EUR</span></a></li>-->
+                    <li><a href="./404.html"><i class="fa fa-user"></i><span class="desktop"> My Account</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mid-nav">    
+            <div class="container">
+                <figure>
+                    <a href="./index.html"><img src="./resources/img/logo.png" alt="Company Logo"></a>
+                    <figcaption><a href="./index.html">CompanyName</a></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="container">
+                <img id="mobile-btn" src="./resources/img/menu.png" alt="menu">
+                <nav id="mobileMenu">
+                    <ul>
+                        <li><a class="menu" href="index.html">Home</a></li>
+                        <!--<li><a class="menu" href="#">Categories</a></li>-->
+                        <li><a class="menu" href="./404.html">About Us</a></li>
+                        <li><a class="menu" href="./404.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-form">
+            <div class="container">
+              <div class="block-heading">
+                <h2>Payment</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+              </div>
+              <form>
+                <div class="products list-container">
+                  <h3 class="title">Checkout</h3>
+                </div>
+                <div class="summary">
+                    <p>Total: <span id="total"></span></p>
+                </div>
+
+
+                <div class="card-details">
+
+                  <h3 class="title">Credit Card Details</h3>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="card-holder">Card Holder</label>
+                            <input id="card-holder" type="text" class="text" placeholder="Card Holder" aria-label="Card Holder" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="text" placeholder="Your Email" aria-label="Card Holder" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input id="card-number" type="text" pattern="[0-9]*" class="text" placeholder="Card Number" aria-label="Card Holder" autocomplete="off" required>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="">Expiration Date</label>
+                            <div class="input-group expiration-date">
+                            <input id="month" type="text" class="form-control" placeholder="MM" aria-label="MM" pattern="[0-9]*" minlength="2" maxlength="2" autocomplete="off" required>
+                            <span class="date-separator">/</span>
+                            <input id="year" type="text" class="form-control" placeholder="YY" aria-label="YY" pattern="[0-9]*" minlength="2" maxlength="2" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="form-group cvc">
+                            <label for="cvc">CVC</label>
+                            <input id="cvc" type="text" pattern="[0-9]*" class="form-control" placeholder="CVC" aria-label="Card Holder" minlength="3" maxlength="3" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input class="btn" type="submit" value="Proceed">
+                    </div>
+                </div>
+              </form>
+            </div>
+          </section>
+
+
+
+
+    </main>
+    <footer>
+        <div class="container">
+            &copy; CompanyName All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

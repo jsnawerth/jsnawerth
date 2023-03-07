@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4.209rem;
+}
+  
+h2 {font-size: 3.157rem;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}
+
+h5 {font-size: 1.333rem;}
+
+h6{font-size: 0.75rem;}
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+html {
+    font-size: 100%;
+    min-width: 460px
+} /*16px*/
+.go-up img{
+    width: 70px;
+}
+.go-up{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+.container{
+    margin: 0 10%;
+}
+/* Header */
+header{
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 30px 0;
+    color: gray;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.logo h2{
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.logo a{
+    color: inherit;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+#btn1, #btn2{
+    height:30px;
+    cursor: pointer;
+}
+
+/* Main section */
+section{
+    margin: 50px 0;
+    align-items: center;
+}
+section h2{
+    font-size: 55px;
+}
+/*Colors*/
+.colorbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-color{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-color:hover{
+    background-color: gainsboro !important;
+}
+.active{
+    background-color: gainsboro;
+}
+.rgb, .hsl{
+    display: none;
+}
+.color-container{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.color1, .color2, .color3, .color4, .color5, .color6{
+    height: 170px;
+}
+.f-item{
+    flex-basis: 170px;
+    flex-grow: 1;   
+}
+.color-item{
+    max-width: 600px;
+}
+.color1{
+    background-color: rgb(245,245,245);
+}
+.color2{
+    background-color: whitesmoke;
+}
+.color3{
+    background-color: lightseagreen;
+}
+.color4{
+    background-color: steelblue;
+}
+.color5{
+    background-color: tomato;
+}
+.color6{
+    background-color: rgb(224, 224, 84);
+}
+/*Gradients*/
+.gradient1, .gradient2, .gradient3, .gradient4, .gradient5, .gradient6{
+    height: 180px;
+}
+.gradient{
+    flex-basis: 400px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.gradient1{
+    background: linear-gradient(90deg, #E0E054 0%, #FF6347 100%);
+}
+.gradient2{
+    background: linear-gradient(90deg,  #4682B4 0%,  #20B2AA 100%)
+}
+.gradient3{
+    background: linear-gradient(90deg,  #20B2AA 0%,  #E0E054 100%)
+}
+.gradient4{
+    background: linear-gradient(90deg,  #4682B4 0%,  #F5F5F5 100%)
+}
+.gradient5{
+    background: linear-gradient(90deg,  #20B2AA 0%,  #DCDCDC 100%)
+}
+.gradient6{
+    background: linear-gradient(90deg,  #FF6347 0%,  #F5F5F5 100%)
+}
+
+/*Font Families*/
+#fonts p{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 5px;
+    line-height: 1em;
+}
+#fonts span{
+    color: lightseagreen;
+}
+#fonts .f-item{
+    flex-basis: 500px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.heading p{
+    font-weight: 700;
+}
+.subheading p{
+    font-weight: 600;
+}
+.bodytext p{
+    font-weight: 400;
+}
+.quotes p{
+    font-weight: 400;
+    font-style: italic;
+}
+.first-letter{
+    font-size: 80px !important;
+}  
+/*Headings*/
+#headings .col{
+    border-top: 2px solid whitesmoke;
+}
+.dotted{
+    border-bottom: 2px dotted grey;
+    margin:0 10px 2px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .col{
+        flex-direction: column;
+    }
+    .m-center{
+        text-align: center;
+    }
+    .container{
+        margin: 0 2%;
+    }
+} 
+/*Footer*/
+footer{
+    background-color: whitesmoke;
+    padding: 30px 0;
+    color: gray;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+

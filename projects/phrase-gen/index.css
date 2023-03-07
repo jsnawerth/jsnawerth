@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans',sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 17% auto 17%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ECF9FF;
+    color: #775f4b;
+    font-size: 1.2rem;
+}
+
+
+.heading{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #FFE7CC;
+    border-radius: 20px 20px 0 0;
+    margin: 5px 5px 0 5px;
+    font-size: 1.2rem;
+}
+ main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #FFFBEB;
+}
+
+section {
+    text-align: center;
+}
+
+.content{
+    max-width: 600px;
+    padding: 30px 15px;
+    text-align: center;
+    background-color: #ECF9FF;
+    border-radius: 0 0 10px 10px;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+
+.quote{
+    font-style: italic;
+    font-weight: 300;
+}
+
+button {
+    margin: 10px;
+    background: transparent;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-weight: 700;   
+    cursor: pointer;
+    border: 1px solid rgb(40, 144, 241);
+    border-radius: 25px;
+    color: rgb(40, 144, 241);
+    box-shadow: 0px 5px #888888;
+    
+  }
+
+button:hover {
+color: rgb(4, 84, 243);
+background-color: #ECF9FF;
+}
+
+button:active{
+background-color: #6ec7f0;
+box-shadow: 0px 0px #888888;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;   
+    background-color: #F8CBA6;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 12px;
+    }
+}
