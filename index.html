@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./resources/reset.css">
     <link rel="stylesheet" href="./resources/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script src="./resources/index.js" async></script>
+    <script src="./resources/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             <div class="text-over">
                 <p class="s1">Hello!</p>
                 <p>I'm Jerry Nawerth</p>
-                <p class="s2 text-animate">Freelancer</p>
+                <p id="textAnimate" class="s2 text-animate">Freelancer</p>
             </div>
             
         </div>
@@ -146,6 +146,11 @@
                 <article class="d-flex contact-in">
                     <img src="./resources/img/contact.jpg" alt="">
                     <form id='form-contact' action="https://formsubmit.co/jnawerth93@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://jsnawerth.github.io/jsnawerth/success.html">
                         <label for="name">Name: </label>
                         <input id='name' type="text" name="clientName" id="" required placeholder="Your Name">
                         <br>
@@ -156,11 +161,6 @@
                         <textarea name="message" id="text-area"rows="10" required></textarea>
                         <button id="form-btn" type="submit"><span>Submit</span></button>
                     </form>
-                    <section id="response">
-                        <h2>Thank you!</h2>
-                        <p>Your request has been submitted, I will take a look at it
-                            and I will answer as soon as possible.</p>
-                    </section>
                 </article>
             </div>
         </section>
