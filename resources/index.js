@@ -1,4 +1,4 @@
-const text1 = document.querySelector('.text-animate');
+const text1 = document.getElementById('textAnimate');
 
 const textLoad = () => {
     setTimeout(()=>{
@@ -27,14 +27,7 @@ const changeBg=()=>{
 
 window.addEventListener('scroll',changeBg)
 
-const formContact = document.getElementById('form-contact');
-const response = document.getElementById('response');
-formContact.addEventListener('submit',function(event){
-    event.preventDefault();
-    formContact.style.display = 'none';
-    response.style.display = 'block'
-})
-
+// Dropmenu
 const menuBtn = document.getElementById('menu-icon');
 const menu = document.getElementById('menu');
 const dropMenu = () => {
@@ -49,7 +42,7 @@ menuBtn.addEventListener('click',dropMenu);
 
     
     
-window.addEventListener("resize", function() {
+window.addEventListener("resize", () => {
     if (window.matchMedia("(min-width: 941px)").matches) {
         menu.style.display = 'none';
     } else {
