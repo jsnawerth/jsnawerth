@@ -376,12 +376,16 @@ form button{
     color: white;
     margin: 10px 0 0 0;
 }
-
+.response-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #response{
-    display: none;
+    width: 70%;
     margin-left: 20px;
     text-align: center;
-    width: 40%;
 }
 #response h2{
     font-size: 2rem;
